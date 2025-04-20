@@ -61,7 +61,7 @@ const Carousel: React.FC<CarouselProps> = ({
         <ul
           className="Carousel__list"
           style={{
-            width: `${fullCarouselWidth}`,
+            width: `${fullCarouselWidth}px`,
             transform: `translateX(${currentX}px)`,
             transition: `all ${animationDuration}ms ease-out`,
           }}
