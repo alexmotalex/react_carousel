@@ -56,38 +56,40 @@ class App extends React.Component<{}, State> {
           <label htmlFor="itemId">Item width:</label>
           <input
             id="itemId"
-            type="text"
+            type="number"
             value={itemWidth}
             onChange={e => this.handleInputChange(e, 'itemWidth')}
           />
           <label htmlFor="frameId">Frame size:</label>
           <input
             id="frameId"
-            type="text"
+            type="number"
             value={frameSize}
             onChange={e => this.handleInputChange(e, 'frameSize')}
           />
           <label htmlFor="stepId">Step:</label>
           <input
             id="stepId"
-            type="text"
+            type="number"
             value={step}
             onChange={e => this.handleInputChange(e, 'step')}
           />
           <label htmlFor="animationId">Animation duration:</label>
           <input
             id="animationId"
-            type="text"
+            type="number"
             value={animationDuration}
             onChange={e => this.handleInputChange(e, 'animationDuration')}
           />
-          <label htmlFor="infinite">Infinite:</label>
-          <input
-            id="infinite"
-            type="checkbox"
-            checked={infinite}
-            onChange={e => this.handleInputChange(e, 'infinite')}
-          />
+          <div className="checkbox-group">
+            <label htmlFor="infinite">Infinite:</label>
+            <input
+              id="infinite"
+              type="checkbox"
+              checked={infinite}
+              onChange={e => this.handleInputChange(e, 'infinite')}
+            />
+          </div>
         </div>
 
         <Carousel

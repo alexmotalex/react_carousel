@@ -31,3 +31,18 @@
 .input-group {
   margin-bottom: 1.5rem;
 }
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  margin-top: 0;
+}
+
+.checkbox-group input {
+  width: auto;
+}

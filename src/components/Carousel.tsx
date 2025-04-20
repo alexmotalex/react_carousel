@@ -61,13 +61,14 @@ const Carousel: React.FC<CarouselProps> = ({
         <ul
           className="Carousel__list"
           style={{
+            width: `${fullCarouselWidth}`,
             transform: `translateX(${currentX}px)`,
             transition: `all ${animationDuration}ms ease-out`,
           }}
         >
           {images.map((image, i) => (
             <li
-              key={image}
+              key={`${image}-${i}`}
               style={{
                 width: `${itemWidth}px`,
                 height: `${itemWidth}px`,
